@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@ViewBag.Title
+
+@*@section scripts{
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $(".nav a").on("click", function () {
+            $(".nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");         
+        });
+    });
+    </script>
+}*@
