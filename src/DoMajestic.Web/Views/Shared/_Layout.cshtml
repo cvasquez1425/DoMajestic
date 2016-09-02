@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="cover">
+        @*<div class="cover">*@
             <ul class="nav nav-tabs">
                 <li class="active">@Html.ActionLink("About us", "Index", "Home")</li>
                 <li>@Html.ActionLink("services", "Services", "Home")</li>
@@ -19,17 +19,21 @@
                 <li>@Html.ActionLink("contacts", "Contacts", "Home")</li>
             </ul>
         </div>
-    </div>
+    @*</div>*@
     <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - DoMajestic Application</p>
-        </footer>
+        <div class="cover">
+            @RenderBody()
+            <hr />
+        </div>
+        <div class="footer">
+            <footer>
+                <p>&copy; @DateTime.Now.Year - DoMajestic Application</p>
+            </footer>
+        </div>
     </div>
 
     @*<script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
 
     @RenderSection("scripts", required: false)
 </body>

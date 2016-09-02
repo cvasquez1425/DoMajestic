@@ -1,13 +1,18 @@
 ﻿body {
-
+/* background-color:aqua !important;  Adding !important forces the browser to overwrite the default style applied by Bootstrap */
 }
+
 .cover {
-    color: rgb(255, 255, 255);
+    /*color: rgb(255, 255, 255);
     position: relative;
-    min-height: 1050px;
-    background: url('../images/domajesticbg1.jpg') no-repeat scroll 0px 100% transparent;
+    min-height: 1000px;
+    background: url('../images/domajesticbg1.jpg') no-repeat scroll 0px 100% transparent;*/
+    background-color:#8ED2C9;
 }
 
+.footer{
+    background-color:#FCF4D9;
+}
 .wrapper {
     width: 100%;
     background-color: lightcyan;
